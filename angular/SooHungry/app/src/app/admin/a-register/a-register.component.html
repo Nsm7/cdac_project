@@ -1,0 +1,48 @@
+<h1>Register Admin</h1>
+
+
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <div class="login">
+
+      <div class="form">
+        <div class="form-group">
+          <label for=""> Name</label>
+          <input [(ngModel)]="Admin_firstname" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Last Name</label>
+          <input [(ngModel)]="Admin_lastname" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="">Locality</label>
+          <input [(ngModel)]="Admin_locality" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Street</label>
+          <input [(ngModel)]="Admin_street" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">House number</label>
+          <input [(ngModel)]="Admin_houseno" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Email Id</label>
+            <input [(ngModel)]="Admin_email" type="address" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">password</label>
+            <input [(ngModel)]="Admin_password" type="text" class="form-control">
+          </div>
+
+        <div class="form-group">
+          <button (click)="onLogin()" class="btn btn-primary">Register</button>
+          <a routerLink="/admin-login" class="btn btn-danger pull-right">Cancel</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4"></div>
+</div>
